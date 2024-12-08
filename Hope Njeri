@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#project-insight-interface">Insight Interface</a></li>
+            <li><a href="#project-task-manager">Task Manager</a></li>
+            <li><a href="#project-payments-app">Payments App</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <header class="portfolio-header">
+        <h1>My Portfolio</h1>
+        <p>Explore my work below.</p>
+    </header>
+
+    <!-- Insight Interface -->
+    <section id="project-insight-interface" class="project-section insight-interface">
+        <div class="content-container">
+            <h2>Insight Interface</h2>
+            <p>
+                The Insight Interface dashboard offers a visually engaging platform for data management, 
+                focusing on usability and streamlined navigation to improve decision-making.
+            </p>
+        </div>
+        <div class="project-image-container">
+            <img src="images/insight-interface.png" alt="Insight Interface Screenshot">
+        </div>
+    </section>
+
+    <!-- Task Manager -->
+    <section id="project-task-manager" class="project-section task-manager">
+        <div class="content-container">
+            <h2>Task Manager</h2>
+            <p>
+                This task manager interface provides dynamic tools for tracking and managing projects, 
+                featuring real-time updates and visually clear metrics.
+            </p>
+        </div>
+        <div class="project-image-container">
+            <img src="images/task-manager.png" alt="Task Manager Screenshot">
+        </div>
+    </section>
+
+    <!-- Payments App -->
+    <section id="project-payments-app" class="project-section payments-app">
+        <div class="content-container">
+            <h2>Payments App</h2>
+            <p>
+                The Payments App offers an intuitive interface for financial management, 
+                complete with detailed charts, balance summaries, and streamlined widgets for usability.
+            </p>
+        </div>
+        <div class="project-image-container">
+            <img src="images/payments-app.png" alt="Payments App Screenshot">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #101216;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #1F202A;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00FFC6;
+}
+
+/* Header Section */
+.portfolio-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #15161E;
+}
+
+.portfolio-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-header p {
+    font-size: 1.2rem;
+    color: #CCCCCC;
+}
+
+/* Project Section Styling */
+.project-section {
+    background-color: #15161E;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.project-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #CCCCCC;
+    line-height: 1.8;
+}
+
+/* Project Image Styling */
+.project-image-container {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Backgrounds */
+.project-section.insight-interface {
+    background: linear-gradient(to right, rgba(55, 60, 97, 0.5), rgba(93, 76, 120, 0.5));
+}
+
+.project-section.task-manager {
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.5), rgba(76, 76, 100, 0.5));
+}
+
+.project-section.payments-app {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(26, 83, 83, 0.5));
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1F202A;
+    color: #CCCCCC;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-header h1 {
+        font-size: 2.5rem;
+    }
+    .project-section {
+        padding: 50px 15px;
+    }
+    .project-section h2 {
+        font-size: 2rem;
+    }
+    .project-section p {
+        font-size: 1rem;
+    }
+}
